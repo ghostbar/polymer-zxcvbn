@@ -1,0 +1,23 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+Element providing solution to no problem in particular.
+
+##### Example
+
+    <zxcvbn></zxcvbn>
+
+@element polymer-zxcvbn
+@blurb Element providing solution to no problem in particular.
+@status alpha
+@homepage http://ghostbar.github.io/polymer-zxcvbn
+-->
+<polymer-element name="zxcvbn" attributes="password extra">
+
+  <template>
+    {{ display.crack_time_display }}
+  </template>
+
+  <script src='polymer-zxcvbn.js'></script>
+
+</polymer-element>
