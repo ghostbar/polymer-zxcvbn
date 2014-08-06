@@ -1,23 +1,24 @@
-<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="bower_components/polymer/polymer.html">
 
 <!--
 Element providing solution to no problem in particular.
 
 ##### Example
 
-    <zxcvbn></zxcvbn>
+    <polymer-zxcvbn password="value" extra="{object: 'with more data'}"></polymer-zxcvbn>
 
 @element polymer-zxcvbn
 @blurb Element providing solution to no problem in particular.
 @status alpha
 @homepage http://ghostbar.github.io/polymer-zxcvbn
 -->
-<polymer-element name="zxcvbn" attributes="password extra">
+<polymer-element name="polymer-zxcvbn" attributes="password extra display">
 
   <template>
     {{ display.crack_time_display }}
   </template>
 
-  <script src='polymer-zxcvbn.js'></script>
-
+  <script src='bower_components/zxcvbn/zxcvbn.js'></script>
+  <script src='polymer-zxcvbn.js'></script> 
+  
 </polymer-element>
