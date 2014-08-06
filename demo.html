@@ -4,15 +4,14 @@
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
   <title>polymer-zxcvbn Demo</title>
 
-  <script src="../platform/platform.js"></script>
+  <script src="bower_components/platform/platform.js"></script>
   <link rel="import" href="polymer-zxcvbn.html">
 
 </head>
 <body unresolved>
 
-  <p>An `polymer-zxcvbn` looks like this:</p>
-
-  <zxcvbn password='"Random"'></zxcvbn>
+  <p>An `polymer-zxcvbn` looks like this passing the string "This should be a strong password" as "password" attribute:</p>
+  <polymer-zxcvbn password='This should be a strong password'></polymer-zxcvbn>
 
 </body>
 </html>
