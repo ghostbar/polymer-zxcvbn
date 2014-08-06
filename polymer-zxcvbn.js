@@ -7,9 +7,12 @@
 
     return zxcvbn(password);
   }
-  Polymer('zxcvbn', {
+  Polymer('polymer-zxcvbn', {
+    ready: function () {
+      this.display = runZxcvbn(this.password, this.extra);
+    },
     passwordChanged: function (oldVal, newVal) {
-      this.$.display = runZxcvbn(newVal, this.$.extra);
+      this.display = runZxcvbn(newVal, this.extra);
     }
   });
 })();
