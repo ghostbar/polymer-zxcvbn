@@ -1,6 +1,8 @@
 polymer-zxcvbn (WIP)
 ================
 
+(ATM: Check `demo.html` to see how to implement it)
+
 See the [component page](http://ghostbar.github.io/polymer-zxcvbn) for more information.
 
 ## Getting Started
